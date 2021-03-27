@@ -13,7 +13,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		job_number: {
-			type: Sequelize.INTEGER
+			type: Sequelize.STRING
 		},
 		job_status: {
 			type: Sequelize.STRING
@@ -28,7 +28,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		material_name: {
-			type: Sequelize.INTEGER
+			type: Sequelize.STRING
 		},
 		
 		area_1: {
@@ -47,7 +47,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		price_1: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		
 		area_2: {
@@ -66,7 +66,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		price_2: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		area_other: {
@@ -85,7 +85,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		price_other: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		
 		phases: {
@@ -104,7 +104,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		price_phases: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		area_other_2: {
@@ -123,7 +123,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		price_other_2: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		phases_2: {
@@ -142,7 +142,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 		},
 		price_phases_2: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		state: {
@@ -159,244 +159,244 @@ module.exports = (sequelize, Sequelize) => {
 		},
 
 		mw_cad_sqft_kitchen: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_kitchen: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_kitchen: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_kitchen: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_vanity: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_vanity: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_vanity: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_vanity: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_laundry: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_laundry: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_laundry: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_laundry: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_butlers: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_butlers: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_butlers: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_butlers: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_ppc: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_ppc: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_ppc: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_ppc: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_drop_zone: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_drop_zone: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_drop_zone: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_drop_zone: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		
 		mw_cad_sqft_btwb: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_btwb: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_btwb: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_btwb: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_fhbs: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_fhbs: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_fhbs: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_fhbs: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_copy_print: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_copy_print: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_copy_print: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_copy_print: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_pantry_coffee: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_pantry_coffee: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_pantry_coffee: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_pantry_coffee: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_phase_19a: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_phase_19a: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_phase_19a: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_phase_19a: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_phase_19b: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_phase_19b: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_phase_19b: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_phase_19b: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_remake: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_remake: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_remake: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_remake: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_rework: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_rework: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_rework: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_rework: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_valet: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_valet: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_valet: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_valet: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_morning_room: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_morning_room: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_morning_room: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_morning_room: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_wine_bar: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_wine_bar: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_wine_bar: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_wine_bar: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		mw_cad_sqft_pocket_office: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_cad_sqft_pocket_office: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		mw_sold_sqft_pocket_office: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		calculated_sold_sqft_pocket_office: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 
 		notes: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		},
 		legend: {
-			type: Sequelize.FLOAT
+			type: Sequelize.STRING
 		}
 	});
 

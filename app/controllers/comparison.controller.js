@@ -179,20 +179,23 @@ exports.create = (req, res) => {
 
 exports.retrieveAllComparisons = (req, res) => {
     // find all Comparison information from 
-    Comparison.findAll()
-        .then(comparisonInfos => {
-            res.status(200).json({
-                message: "Get all Comparisons' Infos Successfully!",
-                comparisons: comparisonInfos
-            });
-        })
-        .catch(error => {
-            // log on console
-            console.log(error);
+    // Comparison.findAll()
+    //     .then(comparisonInfos => {
+    //         res.status(200).json({
+    //             message: "Get all Comparisons' Infos Successfully!",
+    //             comparisons: comparisonInfos
+    //         });
+    //     })
+    //     .catch(error => {
+    //         console.log(error);
 
-            res.status(500).json({
-                message: "Error!",
-                error: error
-            });
-        });
+    //         res.status(500).json({
+    //             message: "Error!",
+    //             error: error
+    //         });
+    //     });
+
+    res.status(200).json({
+        message: "Get all Comparisons' Infos Successfully!",
+    });
 }

@@ -179,7 +179,11 @@ exports.create = (req, res) => {
 
 exports.retrieveAllComparisons = (req, res) => {
     
-    Comparison.findAll()
+    Comparison.findAll({
+        order: [
+            ['id', 'ASC']
+        ]
+    })
         .then(comparisonInfos => {
             res.status(200).json({
                 message: "Get all Comparisons' Infos Successfully!",

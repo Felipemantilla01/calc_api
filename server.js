@@ -18,7 +18,7 @@ let router = require('./app/routers/router.js');
 
 const cors = require('cors')
 const corsOptions = {
-  origin: 'http://localhost:4200',
+  origin: 'http://34.229.63.119/',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));

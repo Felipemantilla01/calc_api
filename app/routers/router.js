@@ -18,7 +18,7 @@ const comparisons = require('../controllers/comparison.controller.js');
 // router.put('/api/customers/update/:id', customers.updateById);
 // router.delete('/api/customers/delete/:id', customers.deleteById);
 
-router.get('/api/comparisons/create', comparisons.create);
+// router.get('/api/comparisons/create', comparisons.create);
 router.get('/api/comparisons/all', comparisons.retrieveAllComparisons);
 
 module.exports = router;

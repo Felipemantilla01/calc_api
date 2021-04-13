@@ -24,5 +24,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
 db.Comparison = require('../models/comparison.model.js')(sequelize, Sequelize);
+db.User = require('../models/user.model.js')(sequelize, Sequelize);
  
 module.exports = db;

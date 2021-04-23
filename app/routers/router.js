@@ -22,3 +22,5 @@
  router.get('/api/comparisons/all', comparisons.retrieveAllComparisons);
  router.put('/api/comparisons/update/:id', comparisons.update);
  router.post('/api/comparisons/addnew', comparisons.addNew);
+ 
+ module.exports = router;

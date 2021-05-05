@@ -4,7 +4,10 @@ const UserModel = db.User;
 module.exports = {
     authenticate,
     getAll,
-    createAdmin
+    createAdmin,
+    createNew,
+    updateUser,
+    deleteUser,
 };
 
 async function authenticate({ username, password }) {
@@ -39,8 +42,84 @@ async function createAdmin() {
     //     return userWithoutPassword;
     // });
 
-    user = { username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'Admin' }
+    user = { username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'Admin', role: 'Admin' }
     await UserModel.create(user);
 
     return user
+}
+
+async function createNew({username, firstName, lastName, role, password}) {
+
+    const user = await UserModel.findOne({
+        where: {
+          username: username,
+        },
+      }).then(row => {
+        console.log(row)
+        return row;
+    });
+
+    if(!user) {
+        userinfo = { username: username, password: password, firstName: firstName, lastName: lastName, role: role }
+        await UserModel.create(userinfo);
+    
+        return userinfo;
+    } else {
+        return {
+            error: 'This user is existing already!',
+        };
+    }
+}
+
+async function updateUser({id, username, firstName, lastName, role, password}) {
+
+    const user = await UserModel.findOne({
+        where: {
+          username: username,
+        },
+      }).then(row => {
+        return row;
+    });
+
+    if(user) {
+        userinfo = { username: username, password: password, firstName: firstName, lastName: lastName, role: role }
+        await UserModel.update(userinfo, {
+            where: {
+                id: id
+            }
+        });
+    
+        return userinfo;
+    } else {
+        return {
+            error: 'This user is not existing already!',
+        };
+    }
+}
+
+async function deleteUser(id) {
+
+    const user = await UserModel.findOne({
+        where: {
+          id: id,
+        },
+      }).then(row => {
+        return row;
+    });
+
+    if(user) {
+        await UserModel.destroy({
+            where: {
+                id: id
+            }
+        });
+    
+        return {
+            msg: 'Deleted successfully!',
+        };
+    } else {
+        return {
+            error: 'This user is not existing already!',
+        };
+    }
 }

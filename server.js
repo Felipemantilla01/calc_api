@@ -20,14 +20,15 @@ let router = require('./app/routers/router.js');
 
 const cors = require('cors')
 const corsOptions = {
-  origin: 'http://34.229.63.119',
+  // origin: 'http://34.229.63.119',
+  origin: 'http://localhost:4200',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(basicAuth);
+// app.use(basicAuth);
 
 app.use('/', router);
 
@@ -38,7 +39,7 @@ app.use('/users', require('./users/users.controller'));
 app.use(errorHandler);
 
 // Create a Server
-const server = app.listen(8080, function () {
+const server = app.listen(3000, function () {
  
   let host = server.address().address
   let port = server.address().port

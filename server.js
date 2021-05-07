@@ -40,7 +40,7 @@ app.use('/users', require('./users/users.controller'));
 app.use(errorHandler);
 
 // Create a Server
-const server = app.listen(3000, function () {
+const server = app.listen(80, function () {
  
   let host = server.address().address
   let port = server.address().port

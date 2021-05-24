@@ -10,9 +10,6 @@ const db = require('../config/db.config.js');
 const Comparison = db.Comparison;
 
 exports.create = (req, res) => {
-    let comparisons = [];
-
-
     csv({
             // noheader:false,
             output: "csv"
@@ -144,16 +141,9 @@ exports.create = (req, res) => {
                         notes: row[119],
                         legend: row[120]
                     };
-                    // comparisons.push(comparison)
 
                     try {
                         Comparison.create(comparison).then(result => {
-                            // console.log(result)
-                            // send uploading message to client
-                            // res.status(200).json({
-                            //     message: "Upload Successfully a Comparison with id = " + result.id,
-                            //     comparison: result,
-                            // });
                         });
                     } catch (error) {
                         res.status(500).json({
@@ -163,15 +153,12 @@ exports.create = (req, res) => {
                     }
                 }
             })
-            // cdata = JSON.stringify(comparisons);
-            // fs.writeFileSync('student-2.json', cdata);
 
         })
 
 
     res.status(200).json({
-        message: "Upload Successfully a Comparison with id = " //+ result.id,
-        // comparison: result,
+        message: "Upload Successfully comparisions"
     });
 
 

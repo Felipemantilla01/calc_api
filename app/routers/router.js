@@ -16,6 +16,7 @@ router.get('/api/comparisons/create', comparisons.create);
 router.get('/api/comparisons/all', comparisons.retrieveAllComparisons);
 router.put('/api/comparisons/update/:id', comparisons.update);
 router.post('/api/comparisons/addnew', comparisons.addNew);
+router.delete('/api/comparisons/delete/:id', comparisons.delete);
 
 router.get('/api/materials/create', materials.create);
 router.get('/api/materials/all', materials.getAll);

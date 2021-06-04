@@ -221,3 +221,13 @@ exports.addNew = (req, res) => {
         });
     }
 }
+
+exports.delete = (req, res) => {
+    const id = req.params.id;
+    Comparison.destroy({where: {id: id}})
+    .then((success) => res.json({ success: !!success }))
+    .catch((error) => {
+      console.log(error);
+      res.status(400).json({ success: false, error, message: 'Could not remove connection.' });
+    });
+}

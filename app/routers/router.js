@@ -26,5 +26,6 @@ router.get('/api/prices/all', prices.getAll);
 
 router.get('/api/material_name_ares/create', material_name_area.create);
 router.get('/api/material_name_ares/all', material_name_area.getAll);
+router.get('/api/material_name_ares/add_additional', material_name_area.addAdditional);
 
 module.exports = router;

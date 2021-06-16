@@ -68,26 +68,23 @@
     let additionalData = [
         {
             customer_type: 'Commercial GC',
-            material_name_area: 'Daltile Ash Grey 2CM & NQ06 Calacatta',
+            material_name_area: 'Daltile Ash Grey 2CM',
         },
         {
             customer_type: 'Commercial GC',
-            material_name_area: 'White Mountain',
+            material_name_area: 'NQ06 Calacatta',
         },
         {
-            customer_type: 'Commercial Millwork',
-            material_name_area: 'Opustone Black Absolute',
-        },
-        {
-            customer_type: 'Commercial GC',
-            material_name_area: 'Quartz NQ12 Statuary',
+            customer_type: 'Builder',
+            material_name_area: 'Columbia Pike (Morrison Hill) (CP)',
         }
     ];
 
     additionalData.map(row => {
-        MaterialNameArea.create(row).then(result => {
-        });
+        MaterialNameArea.create(row).then(result => {});
     });
+
+    MaterialNameArea.destroy({where: {id: 741}});
 
     res.status(200).json({
         message: "Added additional material name areas!"

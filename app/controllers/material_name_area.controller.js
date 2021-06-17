@@ -67,24 +67,30 @@
  exports.addAdditional = (req, res) => {
     let additionalData = [
         {
-            customer_type: 'Commercial GC',
-            material_name_area: 'Daltile Ash Grey 2CM',
+            customer_type: 'Commercial Millwork',
+            material_name_area: 'Quartz Q4042 Trail Ridge 2CM',
         },
         {
             customer_type: 'Commercial GC',
-            material_name_area: 'NQ06 Calacatta',
+            material_name_area: 'AIA-Quartzite Taj Mahal',
+        },
+        {
+            customer_type: 'Residential',
+            material_name_area: 'Ubatua',
         },
         {
             customer_type: 'Builder',
-            material_name_area: 'Columbia Pike (Morrison Hill) (CP)',
+            material_name_area: 'Celebrate VA Premiers III - Meridian Grey (for material name Other Areas)',
+        },
+        {
+            customer_type: 'Builder',
+            material_name_area: 'Windsor Manor (WM) - Granite - Ubatuba',
         }
     ];
-
+    
     additionalData.map(row => {
         MaterialNameArea.create(row).then(result => {});
     });
-
-    MaterialNameArea.destroy({where: {id: 741}});
 
     res.status(200).json({
         message: "Added additional material name areas!"

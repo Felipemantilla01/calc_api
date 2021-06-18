@@ -67,24 +67,8 @@
  exports.addAdditional = (req, res) => {
     let additionalData = [
         {
-            customer_type: 'Commercial Millwork',
-            material_name_area: 'Quartz Q4042 Trail Ridge 2CM',
-        },
-        {
-            customer_type: 'Commercial GC',
-            material_name_area: 'AIA-Quartzite Taj Mahal',
-        },
-        {
-            customer_type: 'Residential',
-            material_name_area: 'Ubatua',
-        },
-        {
-            customer_type: 'Builder',
-            material_name_area: 'Celebrate VA Premiers III - Meridian Grey (for material name Other Areas)',
-        },
-        {
-            customer_type: 'Builder',
-            material_name_area: 'Windsor Manor (WM) - Granite - Ubatuba',
+            customer_type: 'HD',
+            material_name_area: '2566-Cambria-Lakedale 3CM',
         }
     ];
     

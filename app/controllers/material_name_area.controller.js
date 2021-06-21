@@ -67,8 +67,8 @@
  exports.addAdditional = (req, res) => {
     let additionalData = [
         {
-            customer_type: 'HD',
-            material_name_area: '2566-Cambria-Lakedale 3CM',
+            customer_type: 'Builder',
+            material_name_area: 'MSI Quartz Soapstone Metropolis',
         }
     ];
     
